@@ -1,0 +1,114 @@
+.products {
+}
+.products h1 {
+  text-align: center;
+}
+.empty {
+  position: relative;
+  left: 203%;
+  border: 2px solid;
+  width: 163px;
+  height: 47px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products .box-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+.products .box-container .box {
+  position: relative;
+  margin: 2rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+  width: 240px;
+}
+.products .box-container .box a:first-child {
+  position: absolute;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 11px 13px;
+  border-radius: 21px;
+}
+.products .box-container .box a:first-child:hover {
+  background-color: #333;
+}
+
+.products .box-container .box img {
+  max-width: 100%;
+  padding: 30px;
+}
+.products .box-container .content {
+  text-align: center;
+  font-size: 18px;
+}
+.products .box-container .content .name {
+}
+.products .box-container .content .price {
+  margin: 10px 0;
+  color: red;
+}
+.products .box-container .content input[type="number"] {
+  width: 200px;
+  height: 1.9rem;
+  border-radius: 0.5rem;
+}
+.products .box-container .content input[type="submit"] {
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: #f39c12;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  margin-top: 15px;
+}
+.products .box-container .content input[type="submit"]:hover {
+  background-color: #333;
+  border: 2px solid;
+}
+.products .box-container .content .sub-total {
+  margin: 23px 0;
+}
+.products .box-container .content .sub-total span {
+   color: red;
+}
+.delete-btn {
+   text-align: center;
+   border: none;
+   font-size: 1rem;
+   color: white;
+   background-color: #c0392b;
+   width: 7rem;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 1s;
+   padding: 12px 46px;
+}
+.delete-btn:hover {
+   background-color: #333;
+}
+.cart-total {
+   margin: auto;
+   width: fit-content;
+   padding: 70px 178px;
+   text-align: center;
+   border: 1px solid black;
+   margin-top: 50px;
+   border-radius: 21px;
+   font-size: 18px;
+}
+

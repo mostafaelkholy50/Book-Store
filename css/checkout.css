@@ -1,0 +1,253 @@
+/* srart container */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.header {
+  z-index: 100;
+}
+
+/* End Global Rules */
+/* end container */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.con {
+  width: 60rem;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+.box1 {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: #4e5150;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+/* start info  */
+.info {
+  margin-bottom: 20px;
+}
+
+.info h3,
+.shipping h3 {
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 17px 0;
+}
+
+.label {
+  color: #4f4f4f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.input-box {
+  position: relative;
+  margin: 8px 0px 14px;
+}
+
+.input-box input,
+select {
+  width: 80%;
+  padding: 20px 20px 20px 50px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #1a1818;
+}
+
+select option {
+  font-size: 1rem;
+  color: #4e5150;
+}
+
+.input-box i {
+  color: #828282;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* start last */
+.last {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.separate {
+  width: 100%;
+}
+
+.s1 {
+  margin-right: 20px;
+}
+
+.separate input {
+  width: 100%;
+}
+
+/* end last */
+#check {
+  border: 1px solid #828282;
+  margin-right: 10px;
+  width: 20px;
+}
+
+#check + label {
+  color: #4f4f4f;
+  font-weight: 800;
+}
+
+.btn {
+  background-color: purple;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 8px;
+  border: none;
+  margin: 15px 100px;
+  transition: 1s;
+}
+
+.btn:hover {
+  background-color: rgb(166, 2, 166);
+}
+
+/*start responsive */
+/*  في بعض الاخطاء في الرسبونسف  قابله للتعديل  */
+@media screen and (max-width: 1000px) {
+  .con {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .con {
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+    padding-left: 120px;
+    width: 100%;
+    height: 120%;
+  }
+
+  .box1 {
+    width: 100%;
+  }
+
+  .input-box input,
+  select {
+    width: 100%;
+  }
+
+  .input-box input,
+  select .last {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 773px) {
+  .con {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .con {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .con {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .input-box select option {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+/* end responsive */
